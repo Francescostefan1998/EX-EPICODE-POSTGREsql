@@ -1,0 +1,65 @@
+<!--Ex 1
+SELECT * FROM film
+Ex2
+SELECT address, phone, postal_code  FROM address
+Ex3
+SELECT address ||' ' ||postal_code||', '|| phone FROM address
+Ex4
+SELECT title, rating, length
+FROM film
+WHERE rating = 'R';
+Ex 5
+SELECT title, rating, length
+FROM film
+WHERE length > 180
+AND rating = 'G';
+Ex 6
+SELECT amount FROM payment
+ORDER BY amount DESC
+LIMIT 10;
+Ex 7
+SELECT title FROM film
+ORDER BY title DESC
+LIMIT 10;
+Ex 8
+SELECT amount
+FROM payment
+WHERE amount BETWEEN 1 AND 2
+ORDER BY amount DESC
+LIMIT 10;
+Ex 9
+SELECT amount
+FROM payment
+WHERE payment_date BETWEEN '2007-03-01' AND '2007-03-30'
+ORDER BY amount DESC
+Ex 10
+SELECT title FROM film
+WHERE title ILIKE '%north%'
+Ex 11
+SELECT first_name ||' '|| last_name FROM actor
+WHERE last_name LIKE 'W%'
+Ex 12
+SELECT first_name ||' '|| last_name FROM actor
+WHERE first_name LIKE '__y'
+Ex 13
+SELECT first_name ||' '|| last_name FROM staff
+Ex 14
+SELECT * FROM country
+WHERE country ILIKE '%UG%'
+ORDER BY country DESC
+LIMIT 10
+Ex15
+SELECT * FROM city
+WHERE city ILIKE '___a'
+Ex16
+SELECT * FROM city
+WHERE city ILIKE '___a'
+AND country_id > 60
+Ex 17SELECT amount FROM payment
+WHERE amount BETWEEN 2 AND 3
+ORDER BY amount ASCSELECT amount FROM payment
+WHERE amount BETWEEN 2 AND 3
+ORDER BY amount ASC
+
+
+-->

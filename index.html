@@ -63,3 +63,51 @@ ORDER BY amount ASC
 
 
 -->
+
+<!--SECOND DAY EXERCISING-->
+<!-- Ex 1
+    SELECT first_name||' '||last_name FROM staff
+ORDER BY first_name
+Ex 2
+SELECT * FROM payment
+ORDER BY amount DESC
+Ex 3
+SELECT address FROM address
+ORDER BY postal_code ASC
+Ex 4
+SELECT customer.customer_id, first_name, last_name, address FROM customer
+INNER JOIN address
+ON address.address_id = customer.address_id
+Ex 5
+SELECT store_id, address FROM store
+INNER JOIN address
+ON address.address_id = store.address_id
+Ex 6
+SELECT * FROM store
+INNER JOIN address
+ON address.address_id = store.manager_staff_id
+Ex7
+SELECT address, city FROM address
+INNER JOIN city
+ON address.city_id = city.city_id
+Ex 8
+SELECT 
+payment_date,
+SUM (amount) as total_paid
+FROM 
+payment
+GROUP BY
+payment_date
+ORDER BY 
+total_paid DESC
+Ex 9
+SELECT AVG(amount) as average_payment
+FROM payment;
+SELECT customer_id, AVG (amount)
+FROM payment
+GROUP BY customer_id
+Ex 10
+SELECT SUM(amount) as average_payment
+FROM payment;
+
+-->
